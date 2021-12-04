@@ -1,0 +1,60 @@
+
+*{
+    margin: 0;
+    
+    
+    
+}
+body{
+    background-image: linear-gradient(#75596f,#d2c9da);
+   
+}
+img{
+    width: 100%;
+    
+    
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 45px;
+  padding: 10px;
+  
+
+}
+.grid-item {
+  border: none;
+  padding: 20px;
+  text-align: center;
+}
+p{
+    font-size: large;
+}
+
+hr{
+    border: 1px solid black;
+}
+
+
+
+
+
+#btnPrikaziVise {
+    background-color: #afaaae; /* Green */
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    
+}  
+#btnPrikaziVise:hover{
+    background-color:  #d2c9da ;
+}
+
+
+
+ 

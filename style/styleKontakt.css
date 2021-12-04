@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+  }
+  body{
+      margin:  0px;
+      background-color: #75596f;;
+  }
+  .flex-container {
+    display: flex;
+    font-size: 20px;     
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  
+  .flex-item-left {
+    background-color: #d2c9da;
+    padding:40px;
+    flex: 30%;
+    margin:10% 5% 10% 10%;
+  }
+  
+  .flex-item-right {
+    background-color: #d2c9da;
+    padding:40px;
+    flex: 30%;
+    margin: 10% 10% 10% 5%;
+  }
+  h2{
+      text-align: center;
+  }
+  /* Responsive layout - makes a one column-layout instead of a two-column layout */
+  @media (max-width: 800px) {
+    .flex-container {
+    
+     flex-direction: column;
+ 
+    }
+  }
+
+
+.randomcitati{
+    margin-left: 20%;
+    margin-right:  20%;
+    margin-top: 30px;
+    background-color: #d2c9da;
+    font-size: xx-large;
+    padding: 20px;
+  }

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt i rezervacije</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/styleKontakt.css">
+    <link rel="stylesheet" href=   "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+  
+
+ <!-- za prikazivanje random citata -->
+ <script type="text/javascript">
+    writeRandomQuote = function () {
+      var quotes = new Array();
+      quotes[0] = "Action is the real measure of intelligence.";
+      quotes[1] = "Baseball has the great advantage over cricket of being sooner ended.";
+      quotes[2] = "Every goal, every action, every thought, every feeling one experiences, whether it be consciously or unconsciously known, is an attempt to increase one's level of peace of mind.";
+      quotes[3] = "A good head and a good heart are always a formidable combination.";
+      var rand = Math.floor(Math.random()*quotes.length);
+      document.write(quotes[rand]);
+    }
+   
+  </script>
+
+
+
+</head>
+<body>
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <div class="topnav" id="myTopnav" style="background-color: #75596f;">
+        <a href="index.html"  >Početna</a>
+        <a href="katalog.html">Katalog</a>
+        <a href="kontakt.html">Kontakt i porudžbine</a>
+        <a href="onama.html">O nama</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+    </div>
+
+    <div class="randomcitati">
+        <script type="text/javascript">writeRandomQuote();</script>
+    </div>
+    
+
+<div class="flex-container">
+    <div class="flex-item-left">
+        <form>
+            <h2>Porudžbina</h2>
+            <hr>
+            
+            Ime i prezime: <input type="text" id="imeiprezime2" name="imeiprezime" placeholder="minimum 5 karaktera" > <br> <br>
+            Kontakt telefon: <input type="text" id="telefon" name="telefon" placeholder="U formatu +381 123 456"> <br> <br>
+            E-mail adresa: <input id="email" type="email" name="email" placeholder="prodajanakita@gmail.com"> <br> <br>
+            Datum dostave <input id="datum" type="date" name="datum"> <br> <br>
+             
+            Izbor nakita: <br>
+            <input type="checkbox" id="proizvod1" name="proizvod" value="proizvod1">
+            <label for="proizvod1">Srebrni prsten</label><br>
+            <input type="checkbox" id="proizvod2" name="proizvod" value="proizvod2">
+            <label for="proizvod2">Srebrna narukvica</label><br>
+            <input type="checkbox" id="proizvod3" name="proizvod" value="proizvod3">
+            <label for="proizvod3">Srebrni prsten sa kristlima </label><br>
+            <input type="checkbox" id="proizvod4" name="proizvod" value="proizvod4">
+            <label for="proizvod4">Srebrni privezak u obliku romba</label><br>
+            <input type="checkbox" id="proizvod5" name="proizvod" value="proizvod5">
+            <label for="proizvod5">Srebrni privezak u obliku srceta</label><br>
+            <input type="checkbox" id="proizvod6" name="proizvod" value="proizvod6">
+            <label for="proizvod6"> Srebrna ogrlica</label><br>
+            <br>
+            Adresa: <input type="text" id="adresa" name="adresa" placeholder="ulica broj" > <br> <br>
+             
+            <br> <br>
+            <br>
+            <div class="flex-parent jc-center">
+                <input type="submit" class= "margin-right" name="Potvrda" value="Potvrdi narudzbinu" onclick=" validirajPorudzbinu()">
+                <input type="reset" name="Ponistavanje" value="Izbriši">
+            </div>
+            
+        </form>  
+     
+  
+    </div>
+     <div class="flex-item-right">
+        <form>
+            <h2>Kontaktiraj nas</h2>
+            <hr>
+            
+            Ime i prezime: <input id="imeiprezime" type="text" name="imeiprezime"> <br> <br>
+            E-mail adresa: <input id="email2" type="email" name="email"> <br> <br>
+
+           
+                <label>Vaši utisci:</label><br>
+                <textarea id = "textBox" 
+                        rows = "10"
+                        cols = "40" placeholder="Poruka.."></textarea>
+             
+            <br>
+            <input type="checkbox"   name="checkbox"> Da li želite da primate e-mejlove  sa našim posebnim ponudama? <br>
+            <br> <br>
+            <div class="flex-parent jc-center">
+                <input type="submit" class= "margin-right" name="Potvrda" value="Pošalji" onclick=" validirajKontaktFormu()">
+                <input type="reset" name="Ponistavanje" value="Izbriši">
+            </div>
+          
+        </form>  
+     </div>
+    </div>
+</div>
+
+
+
+
+
+    <div class="footer" style="background-color: #75596f;">
+        <div class="footerItem" style="background-color: #75596f;  color: blanchedalmond;">
+            <ul>
+            <strong>Kontaktirajte nas</strong>  
+                <li>+381 11 123 456</li>
+                <li>prodajanakita@gmail.com</li>
+            </ul>
+        </div>
+        <div class="footerItem" style="background-color: #75596f; color: blanchedalmond;" >
+            <p>Možete nas pronaći na društvenim mrežama</p>
+            <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank"></a>
+            <a href="https://www.youtube.com/" class="fa fa-youtube" target="_blank"></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram" target="_blank"></a>
+        </div>
+        <div class="footerItem" style="background-color: #75596f; color: blanchedalmond;">
+            <ul>
+                <strong>Developed by:</strong> 
+                <li> <a href=" " target="_blank">Nina Andrić</a></li>
+                <li><a href=" "  target="_blank">Maša Sovilj</a></li>
+                
+            </ul>
+        </div>  
+    
+    </div>
+<script src="js/main.js"></script>
+<script  src="js/scriptKontakt.js"></script>
+ 
+</body>
+</html>
